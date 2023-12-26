@@ -9,7 +9,7 @@ app.post('/convert', (req, res) => {
     textoInicial = textoInicial.replace(/\((as|os|eis|is|ãos|ães|ões|ns)\)/g, "")
 
     const linhas = textoInicial.split('\n')
-    const regex = /[a-zA-Z\u00C0-\u00FF]+/gm
+    const regex = /[a-zA-Z0-9\u00C0-\u00FF]+/gm
 
     const linhasParseadas = []
     linhas.forEach((linha) => {
