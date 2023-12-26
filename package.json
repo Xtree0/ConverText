@@ -4,8 +4,12 @@
   "description": "",
   "main": "server.js",
   "type": "module",
+  "engines": {
+    "node": "18"
+  },
   "scripts": {
     "start": "node server.js",
+    "ci": "npm install --save",
     "dev": "node --watch server.js"
   },
   "keywords": [],
